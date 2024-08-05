@@ -1,0 +1,15 @@
+<mat-card class="max-div">
+  <img src="{{ goods.image }}" alt="{{ goods.name }}" class="test-poster" />
+  <mat-card-content class="min-div">
+    {{ goods.name }}
+    <button
+      mat-icon-button
+      aria-label="Details of movie"
+      routerLink="/page/{{ goods.id }}"
+    >
+      <mat-icon>info</mat-icon>
+    </button>
+
+    {{ goods.price }}
+  </mat-card-content>
+</mat-card>
