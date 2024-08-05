@@ -4,6 +4,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { RouterLink } from '@angular/router';
+import { CartComponent } from '../cart/cart.component';
 
 @Component({
   selector: 'app-page',
@@ -14,13 +15,14 @@ import { RouterLink } from '@angular/router';
     MatIconModule,
     MatCardModule,
     RouterLink,
+    CartComponent,
   ],
   templateUrl: './page.component.html',
   styleUrl: './page.component.scss',
 })
 export class PageComponent {
   @Input() goods = {
-    id: 1,
+    id: '1',
     name: 'Wireless Bluetooth Headphones',
     price: 89.99,
     image:

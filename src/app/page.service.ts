@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { goods } from './app.component';
+import { goods, orders } from './app.component';
 
 @Injectable({
   providedIn: 'root',
@@ -53,6 +53,7 @@ export class PageService {
     // },
   ];
 
+  orderList: Array<orders> = [];
   constructor() {}
 
   getAllpagesP(): Promise<goods[]> {
@@ -63,5 +64,17 @@ export class PageService {
 
   getpageList() {
     return this.pageList;
+  }
+
+  getpageByIdP(id: string): Promise<goods> {
+    return fetch(
+      `https://66b0a8ac6a693a95b539a7ec.mockapi.io/E-commerce/${id}`
+    ).then((res) => res.json());
+  }
+
+  getAllordersP(): Promise<goods[]> {
+    return fetch(`https://66b0a8ac6a693a95b539a7ec.mockapi.io/orders`).then(
+      (res) => res.json()
+    );
   }
 }
