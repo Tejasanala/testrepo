@@ -1,17 +1,20 @@
 <mat-card class="max-div">
   <img src="{{ goods.image }}" alt="{{ goods.name }}" class="test-poster" />
   <mat-card-content class="min-div">
-    {{ goods.name }}
-    <button
-      mat-icon-button
-      aria-label="Details of movie"
-      routerLink="/page/{{ goods.id }}"
-    >
-      <mat-icon>info</mat-icon>
-    </button>
-    <div class="addcart">
-      <app-cart />
+    <h6><b>Product Name :</b> {{ goods.name }}</h6>
+    <h6>Price : ${{ goods.price }}</h6>
+
+    <div class="page">
+      <button
+        mat-icon-button
+        aria-label="Details of movie"
+        routerLink="/page/{{ goods.id }}"
+      >
+        <mat-icon>info</mat-icon>
+      </button>
+      <div class="addcart">
+        <app-cart />
+      </div>
     </div>
-    Price :{{ goods.price }}
   </mat-card-content>
 </mat-card>

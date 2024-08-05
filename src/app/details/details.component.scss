@@ -11,3 +11,17 @@
 {
     width:400px;
 }
+.main
+{
+    display:grid;
+    min-height: 100vh;
+    margin: 0px;
+    place-content: center;
+    text-align: center;
+    
+}
+.test-poster{
+    object-fit: cover;
+    height:470px;
+
+}

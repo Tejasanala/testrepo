@@ -72,7 +72,7 @@ export class PageService {
     ).then((res) => res.json());
   }
 
-  getAllordersP(): Promise<goods[]> {
+  getAllordersP(): Promise<orders[]> {
     return fetch(`https://66b0a8ac6a693a95b539a7ec.mockapi.io/orders`).then(
       (res) => res.json()
     );
