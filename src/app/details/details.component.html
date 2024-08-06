@@ -1,10 +1,14 @@
 <div class="main">
   <div class="max-div">
+    <div class="back">
+      <button mat-icon-button aria-label="Details of movie" routerLink="/page">
+        <mat-icon><i class="fa-solid fa-arrow-left"></i></mat-icon>
+      </button>
+    </div>
     <img src="{{ goods.image }}" alt="{{ goods.name }}" class="test-poster" />
     <div class="min-div">
       <h5>{{ goods.name }}</h5>
       <p><b>Price :</b>{{ goods.price }}</p>
-
       <p><b>Quantity : </b>{{ goods.quantity }}</p>
       <p><b>Description :</b>{{ goods.description }}</p>
     </div>

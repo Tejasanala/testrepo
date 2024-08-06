@@ -4,6 +4,7 @@ import { PageComponent } from './page/page.component';
 import { PagelistComponent } from './pagelist/pagelist.component';
 import { OneorderComponent } from './oneorder/oneorder.component';
 import { OrdersComponent } from './orders/orders.component';
+import { CartComponent } from './cart/cart.component';
 export interface goods {
   id: string;
   image: string;
@@ -30,6 +31,7 @@ export interface orders {
     RouterLink,
     OneorderComponent,
     OrdersComponent,
+    CartComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

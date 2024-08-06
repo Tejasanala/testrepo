@@ -7,14 +7,19 @@
     <div class="page">
       <button
         mat-icon-button
-        aria-label="Details of movie"
+        aria-label="Details of page"
         routerLink="/page/{{ goods.id }}"
       >
         <mat-icon>info</mat-icon>
       </button>
-      <div class="addcart">
-        <app-cart />
-      </div>
+
+      <button
+        mat-icon-button
+        aria-label="Details of cart"
+        routerLink="/page/cart"
+      >
+        <mat-icon><i class="fa-solid fa-cart-plus"></i></mat-icon>
+      </button>
     </div>
   </mat-card-content>
 </mat-card>

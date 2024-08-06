@@ -5,12 +5,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { PageService } from '../page.service';
 import { goods } from '../app.component';
-import { Route } from '@angular/router';
+import { Route, RouterLink } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [MatCardModule, MatIconModule, MatBadgeModule, MatButtonModule],
+  imports: [
+    MatCardModule,
+    MatIconModule,
+    MatBadgeModule,
+    MatButtonModule,
+    RouterLink,
+  ],
   templateUrl: './details.component.html',
   styleUrl: './details.component.scss',
 })
