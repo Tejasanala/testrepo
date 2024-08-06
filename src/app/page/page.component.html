@@ -15,10 +15,14 @@
 
       <button
         mat-icon-button
-        aria-label="Details of cart"
+        aria-label="AddTo Cart"
+        color="primary"
+        (click)="AddCart()"
         routerLink="/page/cart"
       >
-        <mat-icon><i class="fa-solid fa-cart-plus"></i></mat-icon>
+        <mat-icon
+          ><i class="fa-solid fa-cart-plus" style="color: black"></i
+        ></mat-icon>
       </button>
     </div>
   </mat-card-content>

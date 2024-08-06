@@ -30,4 +30,9 @@ export class PageComponent {
     quantity: 3,
     description: 'Bad',
   };
+  quantity = 0;
+
+  AddCart() {
+    this.quantity++;
+  }
 }

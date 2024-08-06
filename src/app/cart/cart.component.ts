@@ -8,10 +8,4 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss',
 })
-export class CartComponent {
-  quantity = 0;
-
-  AddCart() {
-    this.quantity++;
-  }
-}
+export class CartComponent {}
